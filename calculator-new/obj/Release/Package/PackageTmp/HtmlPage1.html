@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Calculator-New-2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="StyleSheet1.css" rel="stylesheet" />
+     <style>
+           .table td {
+             border-color: #212121;
+             border-top: 1px solid #212121;
+         }
+           .table thead th{
+             border: 0px solid #212121;
+             border-bottom: 0px solid #212121;
+             border-top: 0px solid #212121;
+         }  
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">                
+            </div>
+            <div class="col-md-4 col-sm-12 calculator" style="padding-right:5%; padding-left:5%; padding-top:20px; padding-bottom:0px; border:0px">
+                <div class="card">
+                    <h3 class="card-header">Calcolator</h3>
+                    <div class="card-body" style="padding:0px;">
+                        <table class="table table-responsive " style="margin-bottom:0px;">
+                            <thead class="thead-light" style="border-bottom: 0px solid #212121; border-top: 0px solid #212121;">
+                                <tr>
+                                    <th colspan="5" style="background-color: #212121; color:floralwhite">
+                                        <div class="screen">
+                                            <div id="cursor">0</div>
+                                            <div id="result">0</div>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="keys">
+                                <tr>
+                                    <td class="key" id="ribua" onclick="click_ribua()">x<sup>2</sup></td>
+                                    <td class="key" id="num_7" onclick="click_number(7)">7</td>
+                                    <td class="key" id="num_8" onclick="click_number(8)">8</td>
+                                    <td class="key" id="num_9" onclick="click_number(9)">9</td>
+                                    <td class="key" id="plus" onclick="click_plus()">+</td>
+                                </tr>
+                                <tr>
+                                    <td class="key" id="shoresh" onclick="click_shoresh()">√</td>
+                                    <td class="key" id="num_4" onclick="click_number(4)">4</td>
+                                    <td class="key" id="num_5" onclick="click_number(5)">5</td>
+                                    <td class="key" id="num_6" onclick="click_number(6)">6</td>
+                                    <td class="key" id="minus" onclick="click_minus()">-</td>
+                                </tr>
+                                <tr>
+                                    <td class="key" id="sinus" onclick="click_sin()">sin</td>
+                                    <td class="key" id="num_1" onclick="click_number(1)">1</td>
+                                    <td class="key" id="num_2" onclick="click_number(2)">2</td>
+                                    <td class="key" id="num_3" onclick="click_number(3)">3</td>
+                                    <td class="key" id="kefel" onclick="click_kefel()">*</td>
+                                </tr>
+                                <tr>
+                                    <td class="key" id="cosinus" onclick="click_cos()">cos</td>
+                                    <td class="key" id="point" onclick="click_point()"><b>.</b></td>
+                                    <td class="key" id="zero" onclick="click_number(0)">0</td>
+                                    <td class="key" id="shave" onclick="click_shave()">=</td>
+                                    <td class="key" id="hiluk" onclick="click_hiluk()">/</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn key" onclick="clear_screen()">Reset</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12" style="padding-right:5%; padding-left:5%; padding-top:20px; padding-bottom:20px; border:0px">
+                <div class="card">
+                    <h3 class="card-header">History</h3>
+                    <div class="card-body">
+                        <ul id="history"></ul>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <button class="btn key" onclick="reload()">Clear History</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+
+
+    <script src="JavaScript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

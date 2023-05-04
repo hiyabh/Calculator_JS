@@ -1,0 +1,120 @@
+﻿html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: url('sea.jpeg');
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+calculator {
+    color: floralwhite;
+    background-color: #212121;
+}
+
+h3 {
+    text-align: center;
+}
+th {
+    color: floralwhite;
+    background-color: #212121;
+    border-color: #212121;
+}
+table {
+    color: floralwhite;
+    background-color: #212121;
+    width: 100%;
+    border-color: #212121;
+}
+
+thead, tbody, tfoot {
+    color: floralwhite;
+    background-color: #212121;
+    width: 100%;
+    display: inline-table;
+    border-color: #212121;
+}
+
+
+/*screen*/
+.screen {
+    font-family: bpdots;
+    font-size: 18px;
+    height: 45px;
+    background-color: #212121;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#cursor {
+    height: 20px;
+    text-align: left;
+    padding-left: 5px;
+}
+#result {
+    height: 20px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+/*keys*/
+.key {
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+.key:hover {
+        color: rgba(226, 170, 26, 1);
+    }
+
+
+.card {
+    background-color: #212121;
+    opacity: 0.8;
+}
+
+.card-header {
+    font-family: 'Times New Roman', Times, serif;
+    color: #D35400;
+    background-color: #212121;
+    border-left: #D35400 10px;
+    border-right: #D35400 10px;
+    border-top: #D35400 10px;
+    opacity: 0.9;
+}
+
+.card-body {
+    color: floralwhite;
+    background-color: #212121;
+    border-left: #D35400 10px;
+    border-right: #D35400 10px;
+}
+
+.card-footer {
+    color: floralwhite;
+    background-color: #212121;
+    border-left: #D35400 10px;
+    border-right: #D35400 10px;
+    border-bottom: #D35400 10px;
+    opacity: 0.9;
+}
+
+.table td {
+    border-color: #212121;
+    border-top: 1px solid #212121;
+}
+
+.table th {
+    border: 1px solid #212121;
+    border-bottom: 1px solid #212121;
+    border-top: 1px solid #212121;
+}
+
+.btn {
+    color: #D35400;
+    background-color: #212121;
+    font-family: 'Times New Roman', Times, serif;
+}
